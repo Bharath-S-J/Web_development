@@ -1,0 +1,15 @@
+/* Style for h3 elements */
+h3 {
+    background: rgb(49, 131, 173); /* Set the background color to a shade of blue */
+}
+
+/* Style for the body element */
+body {
+    background: rgb(238, 141, 174); /* Set the background color to a shade of pink */
+}
+
+/* Style for aside elements */
+aside {
+    color: rgb(86, 59, 59); /* Set the text color to a shade of dark brown */
+    background: rgb(203, 22, 82); /* Set the background color to a shade of red */
+}

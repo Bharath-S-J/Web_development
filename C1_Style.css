@@ -1,0 +1,27 @@
+/* Style for element with id "image" */
+#image {
+    display: block; /* Display as a block element */
+    width: 20%; /* Set the width to 20% of the parent element */
+    max-width: 50%; /* Set the maximum width to 50% of the parent element */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+}
+
+/* Style for element with id "image-div" */
+#image-div {
+    text-align: center; /* Center-align the text and inline elements inside the div */
+}
+
+/* Style for h1 elements */
+h1 {
+    font-size: 100px; /* Set the font size to 100 pixels */
+}
+
+/* Style for element with id "image-caption" */
+#image-caption {
+    font-size: 70px; /* Set the font size to 70 pixels */
+}
+
+/* Style for element with id "image-desc" */
+#image-desc {
+    font-size: 60px; /* Set the font size to 60 pixels */
+}
