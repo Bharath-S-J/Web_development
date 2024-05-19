@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+}
+nav {
+    background: wheat;
+}
+
+nav ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+nav ul li{
+    margin: 2px;
+    padding: 10px;
+    list-style: none;
+}
+
+body{
+    
+    background: palevioletred;
+    min-height:100vh;
+    flex-direction: column;
+    display: flex;
+}
+nav,footer{
+    flex-shrink: 0;
+
+}
+section{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#logo{
+    width: 200px;
+    height: 100px;
+    background: rgb(241, 198, 133);
+}
+.layer{
+    padding:10px 5px;
+   border-bottom: 2px solid gray;
+    background: rgb(184, 181, 176);
+}

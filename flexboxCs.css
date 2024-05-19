@@ -1,0 +1,67 @@
+body{
+    background: palevioletred;
+}
+
+.layout1 div{
+    background: rgb(228, 78, 153);
+    width: 200px;
+    border: 2px solid black;
+    height : 70px;
+    border-radius:30px;
+    margin-top: 20px;
+    margin-left: 70px;
+    text-align: center;
+    color: antiquewhite;
+    flex-basis:200px;
+
+}
+#parent {
+    background: rgb(228, 78, 153);
+    width: 200px;
+    border: 2px solid black;
+    height : 170px;
+    border-radius:30px;
+    margin-top: 20px;
+    margin-left: 70px;
+    text-align: center;
+    color: rgb(14, 14, 14);
+    flex-basis:200px;
+    display: flex;
+     justify-content: center;
+    /* justify-content: flex-start;
+    justify-content: flex-end; */
+    align-items: center;
+    /* align-items: flex-start;
+    align-items: flex-end;*/
+} 
+
+#child{
+    background: rgb(255, 255, 2);
+    border-radius:30px;
+    height: 70px;
+    width: 170px;
+
+}
+
+.d1{
+    flex-shrink: 1;
+}
+.d2{
+    flex-shrink: 2;
+}
+.d3{
+    flex-shrink: 3;
+}
+.d4{
+    flex-shrink: 4;
+}
+.d5{
+    flex-shrink: 5;
+}
+
+
+.layout1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

@@ -1,0 +1,19 @@
+body{
+    background: palevioletred;
+}
+
+.layout1 div{
+    background: rgb(228, 78, 153);
+    width: 200px;
+    border: 2px solid black;
+    height : 200px;
+    border-radius:30px;
+    margin-top: 20px;
+    margin-left: 70px;
+
+}
+
+.layout1{
+    display: flex;
+    flex-direction: column;
+}

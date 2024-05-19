@@ -1,0 +1,1288 @@
+babajan@babajan-VirtualBox:~$ echo "My name is Khan"
+My name is Khan
+babajan@babajan-VirtualBox:~$ hi
+
+Command 'hi' not found, but can be installed with:
+
+sudo snap install hi
+
+babajan@babajan-VirtualBox:~$ cd ..
+babajan@babajan-VirtualBox:/home$ cd..
+cd..: command not found
+babajan@babajan-VirtualBox:/home$ cd ..
+babajan@babajan-VirtualBox:/$ cd ..
+babajan@babajan-VirtualBox:/$ hhhhhhhh^C
+babajan@babajan-VirtualBox:/$ pwd
+/
+babajan@babajan-VirtualBox:/$ cd root
+bash: cd: root: Permission denied
+babajan@babajan-VirtualBox:/$ cd home
+babajan@babajan-VirtualBox:/home$ cd /
+babajan@babajan-VirtualBox:/$ ls
+bin  boot  cdrom  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  swapfile  sys  tmp  usr  var
+babajan@babajan-VirtualBox:/$ cd root
+bash: cd: root: Permission denied
+babajan@babajan-VirtualBox:/$ ls -la
+total 1455376
+drwxr-xr-x  20 root root       4096 Dec 24  2021 .
+drwxr-xr-x  20 root root       4096 Dec 24  2021 ..
+lrwxrwxrwx   1 root root          7 Dec 24  2021 bin -> usr/bin
+drwxr-xr-x   4 root root       4096 Jan 17  2022 boot
+drwxrwxr-x   2 root root       4096 Dec 24  2021 cdrom
+drwxr-xr-x  20 root root       4220 May  5 15:41 dev
+drwxr-xr-x 131 root root      12288 Jan 17  2022 etc
+drwxr-xr-x   3 root root       4096 Dec 24  2021 home
+lrwxrwxrwx   1 root root          7 Dec 24  2021 lib -> usr/lib
+lrwxrwxrwx   1 root root          9 Dec 24  2021 lib32 -> usr/lib32
+lrwxrwxrwx   1 root root          9 Dec 24  2021 lib64 -> usr/lib64
+lrwxrwxrwx   1 root root         10 Dec 24  2021 libx32 -> usr/libx32
+drwx------   2 root root      16384 Dec 24  2021 lost+found
+drwxr-xr-x   3 root root       4096 Dec 25  2021 media
+drwxr-xr-x   2 root root       4096 Aug 19  2021 mnt
+drwxr-xr-x   3 root root       4096 Dec 25  2021 opt
+dr-xr-xr-x 259 root root          0 May  5 15:40 proc
+drwx------   4 root root       4096 Jan 17  2022 root
+drwxr-xr-x  29 root root        860 May  5 16:04 run
+lrwxrwxrwx   1 root root          8 Dec 24  2021 sbin -> usr/sbin
+drwxr-xr-x  11 root root       4096 Dec 26  2021 snap
+drwxr-xr-x   2 root root       4096 Aug 19  2021 srv
+-rw-------   1 root root 1490211840 Dec 24  2021 swapfile
+dr-xr-xr-x  13 root root          0 May  5 15:40 sys
+drwxrwxrwt  18 root root       4096 May  5 16:04 tmp
+drwxr-xr-x  14 root root       4096 Aug 19  2021 usr
+drwxr-xr-x  14 root root       4096 Aug 19  2021 var
+babajan@babajan-VirtualBox:/$ su-
+
+Command 'su-' not found, did you mean:
+
+  command 'sum' from deb coreutils (8.30-3ubuntu2)
+  command 'sur' from deb subtle (0.11.3224-xi-2.2build3)
+  command 'sup' from deb sup (20100519-1build1)
+  command 'su' from deb util-linux (2.34-0.1ubuntu9.1)
+  command 'su1' from deb hxtools (20200126-1build1)
+
+Try: sudo apt install <deb name>
+
+babajan@babajan-VirtualBox:/$ sudo passwd root
+[sudo] password for babajan: 
+New password: 
+Retype new password: 
+passwd: password updated successfully
+babajan@babajan-VirtualBox:/$ sudo passwd -l root
+passwd: password expiry information changed.
+babajan@babajan-VirtualBox:/$ su -
+Password: 
+su: Authentication failure
+babajan@babajan-VirtualBox:/$ su -
+Password: 
+su: Authentication failure
+babajan@babajan-VirtualBox:/$ cd etc
+babajan@babajan-VirtualBox:/etc$ ls
+acpi                           crontab              gnome            ld.so.conf.d    network                  rc4.d              systemd
+adduser.conf                   cron.weekly          groff            legal           networkd-dispatcher      rc5.d              terminfo
+alsa                           cups                 group            libao.conf      NetworkManager           rc6.d              thermald
+alternatives                   cupshelpers          group-           libaudit.conf   networks                 rcS.d              thunderbird
+anacrontab                     dbus-1               grub.d           libblockdev     newt                     resolv.conf        timezone
+apg.conf                       dconf                gshadow          libnl-3         nsswitch.conf            rmt                tmpfiles.d
+apm                            debconf.conf         gshadow-         libpaper.d      openvpn                  rpc                ubuntu-advantage
+apparmor                       debian_version       gss              libreoffice     opt                      rsyslog.conf       ucf.conf
+apparmor.d                     default              gtk-2.0          locale.alias    os-release               rsyslog.d          udev
+apport                         deluser.conf         gtk-3.0          locale.gen      PackageKit               rygel.conf         udisks2
+appstream.conf                 depmod.d             hdparm.conf      localtime       pam.conf                 sane.d             ufw
+apt                            dhcp                 host.conf        logcheck        pam.d                    security           update-manager
+avahi                          dictionaries-common  hostid           login.defs      papersize                selinux            update-motd.d
+bash.bashrc                    dkms                 hostname         logrotate.conf  passwd                   sensors3.conf      update-notifier
+bash_completion                dpkg                 hosts            logrotate.d     passwd-                  sensors.d          UPower
+bash_completion.d              e2scrub.conf         hosts.allow      lsb-release     pcmcia                   services           usb_modeswitch.conf
+bindresvport.blacklist         emacs                hosts.deny       ltrace.conf     perl                     sgml               usb_modeswitch.d
+binfmt.d                       environment          hp               machine-id      pki                      shadow             vim
+bluetooth                      environment.d        ifplugd          magic           pm                       shadow-            vmware-tools
+brlapi.key                     ethertypes           init             magic.mime      pnm2ppa.conf             shells             vtrgb
+brltty                         firefox              init.d           mailcap         polkit-1                 skel               vulkan
+brltty.conf                    fonts                initramfs-tools  mailcap.order   popularity-contest.conf  snmp               wgetrc
+ca-certificates                fprintd.conf         inputrc          manpath.config  ppp                      speech-dispatcher  wpa_supplicant
+ca-certificates.conf           fstab                insserv.conf.d   mime.types      profile                  ssh                X11
+ca-certificates.conf.dpkg-old  fuse.conf            iproute2         mke2fs.conf     profile.d                ssl                xattr.conf
+calendar                       fwupd                issue            modprobe.d      protocols                subgid             xdg
+chatscripts                    gai.conf             issue.net        modules         pulse                    subgid-            xml
+console-setup                  gamemode.ini         kernel           modules-load.d  python3                  subuid             zsh_command_not_found
+cracklib                       gdb                  kernel-img.conf  mtab            python3.8                subuid-
+cron.d                         gdm3                 kerneloops.conf  mtools.conf     rc0.d                    sudoers
+cron.daily                     geoclue              ldap             mysql           rc1.d                    sudoers.d
+cron.hourly                    ghostscript          ld.so.cache      nanorc          rc2.d                    sysctl.conf
+cron.monthly                   glvnd                ld.so.conf       netplan         rc3.d                    sysctl.d
+babajan@babajan-VirtualBox:/etc$ pwd
+/etc
+babajan@babajan-VirtualBox:/etc$ ls -l
+total 1116
+drwxr-xr-x  3 root root    4096 Aug 19  2021 acpi
+-rw-r--r--  1 root root    3028 Aug 19  2021 adduser.conf
+drwxr-xr-x  3 root root    4096 Aug 19  2021 alsa
+drwxr-xr-x  2 root root    4096 Dec 25  2021 alternatives
+-rw-r--r--  1 root root     401 Jul 17  2019 anacrontab
+-rw-r--r--  1 root root     433 Oct  2  2017 apg.conf
+drwxr-xr-x  5 root root    4096 Aug 19  2021 apm
+drwxr-xr-x  3 root root    4096 Aug 19  2021 apparmor
+drwxr-xr-x  6 root root    4096 Jan 17  2022 apparmor.d
+drwxr-xr-x  4 root root    4096 Dec 24  2021 apport
+-rw-r--r--  1 root root     769 Jan 18  2020 appstream.conf
+drwxr-xr-x  7 root root    4096 Dec 24  2021 apt
+drwxr-xr-x  3 root root    4096 Aug 19  2021 avahi
+-rw-r--r--  1 root root    2319 Feb 25  2020 bash.bashrc
+-rw-r--r--  1 root root      45 Jan 26  2020 bash_completion
+drwxr-xr-x  2 root root    4096 Dec 24  2021 bash_completion.d
+-rw-r--r--  1 root root     367 Apr 15  2020 bindresvport.blacklist
+drwxr-xr-x  2 root root    4096 Apr 22  2020 binfmt.d
+drwxr-xr-x  2 root root    4096 Dec 24  2021 bluetooth
+-rw-r-----  1 root root      33 Aug 19  2021 brlapi.key
+drwxr-xr-x  7 root root    4096 Aug 19  2021 brltty
+-rw-r--r--  1 root root   26916 Mar  4  2020 brltty.conf
+drwxr-xr-x  3 root root    4096 Aug 19  2021 ca-certificates
+-rw-r--r--  1 root root    6570 Dec 24  2021 ca-certificates.conf
+-rw-r--r--  1 root root    6569 Aug 19  2021 ca-certificates.conf.dpkg-old
+drwxr-xr-x  2 root root    4096 Aug 19  2021 calendar
+drwxr-s---  2 root dip     4096 Aug 19  2021 chatscripts
+drwxr-xr-x  2 root root    4096 Dec 24  2021 console-setup
+drwxr-xr-x  2 root root    4096 Aug 19  2021 cracklib
+drwxr-xr-x  2 root root    4096 Dec 24  2021 cron.d
+drwxr-xr-x  2 root root    4096 Dec 24  2021 cron.daily
+drwxr-xr-x  2 root root    4096 Aug 19  2021 cron.hourly
+drwxr-xr-x  2 root root    4096 Aug 19  2021 cron.monthly
+-rw-r--r--  1 root root    1042 Feb 14  2020 crontab
+drwxr-xr-x  2 root root    4096 Dec 24  2021 cron.weekly
+drwxr-xr-x  5 root lp      4096 May  5 15:44 cups
+drwxr-xr-x  2 root root    4096 Aug 19  2021 cupshelpers
+drwxr-xr-x  4 root root    4096 Aug 19  2021 dbus-1
+drwxr-xr-x  4 root root    4096 Aug 19  2021 dconf
+-rw-r--r--  1 root root    2969 Aug  3  2019 debconf.conf
+-rw-r--r--  1 root root      13 Dec  5  2019 debian_version
+drwxr-xr-x  3 root root    4096 Dec 24  2021 default
+-rw-r--r--  1 root root     604 Sep 16  2018 deluser.conf
+drwxr-xr-x  2 root root    4096 Dec 25  2021 depmod.d
+drwxr-xr-x  4 root root    4096 Aug 19  2021 dhcp
+drwxr-xr-x  2 root root    4096 Dec 24  2021 dictionaries-common
+drwxr-xr-x  4 root root    4096 Dec 25  2021 dkms
+drwxr-xr-x  4 root root    4096 Dec 25  2021 dpkg
+-rw-r--r--  1 root root     685 Feb 14  2020 e2scrub.conf
+drwxr-xr-x  3 root root    4096 Aug 19  2021 emacs
+-rw-r--r--  1 root root     106 Aug 19  2021 environment
+drwxr-xr-x  2 root root    4096 Aug 19  2021 environment.d
+-rw-r--r--  1 root root    1816 Dec 27  2019 ethertypes
+drwxr-xr-x  3 root root    4096 Jan 17  2022 firefox
+drwxr-xr-x  4 root root    4096 Aug 19  2021 fonts
+-rw-r--r--  1 root root      20 Jan 13  2021 fprintd.conf
+-rw-rw-r--  1 root root     665 Dec 24  2021 fstab
+-rw-r--r--  1 root root     280 Jun 20  2014 fuse.conf
+drwxr-xr-x  3 root root    4096 Aug 19  2021 fwupd
+-rw-r--r--  1 root root    2584 Feb  1  2020 gai.conf
+-rw-r--r--  1 root root    4372 May 18  2020 gamemode.ini
+drwxr-xr-x  2 root root    4096 Aug 19  2021 gdb
+drwxr-xr-x  8 root root    4096 Aug 19  2021 gdm3
+drwxr-xr-x  2 root root    4096 Aug 19  2021 geoclue
+drwxr-xr-x  4 root root    4096 Aug 19  2021 ghostscript
+drwxr-xr-x  3 root root    4096 Aug 19  2021 glvnd
+drwxr-xr-x  2 root root    4096 Aug 19  2021 gnome
+drwxr-xr-x  2 root root    4096 Aug 19  2021 groff
+-rw-r--r--  1 root root    1104 Jan 17  2022 group
+-rw-r--r--  1 root root    1092 Dec 25  2021 group-
+drwxr-xr-x  2 root root    4096 Aug 19  2021 grub.d
+-rw-r-----  1 root shadow   920 Jan 17  2022 gshadow
+-rw-r-----  1 root shadow   912 Dec 25  2021 gshadow-
+drwxr-xr-x  3 root root    4096 Aug 19  2021 gss
+drwxr-xr-x  2 root root    4096 Aug 19  2021 gtk-2.0
+drwxr-xr-x  2 root root    4096 Aug 19  2021 gtk-3.0
+-rw-r--r--  1 root root    5060 Aug 21  2019 hdparm.conf
+-rw-r--r--  1 root root      92 Dec  5  2019 host.conf
+-rw-r--r--  1 root root       4 Aug 19  2021 hostid
+-rw-r--r--  1 root root      19 Dec 24  2021 hostname
+-rw-r--r--  1 root root     233 Dec 24  2021 hosts
+-rw-r--r--  1 root root     411 Aug 19  2021 hosts.allow
+-rw-r--r--  1 root root     711 Aug 19  2021 hosts.deny
+drwxr-xr-x  2 root root    4096 Aug 19  2021 hp
+drwxr-xr-x  3 root root    4096 Aug 19  2021 ifplugd
+drwxr-xr-x  2 root root    4096 Dec 24  2021 init
+drwxr-xr-x  2 root root    4096 Jan 17  2022 init.d
+drwxr-xr-x  5 root root    4096 Aug 19  2021 initramfs-tools
+-rw-r--r--  1 root root    1748 Feb 25  2020 inputrc
+drwxr-xr-x  2 root root    4096 Aug 19  2021 insserv.conf.d
+drwxr-xr-x  4 root root    4096 Aug 19  2021 iproute2
+-rw-r--r--  1 root root      26 Aug  4  2021 issue
+-rw-r--r--  1 root root      19 Aug  4  2021 issue.net
+drwxr-xr-x  8 root root    4096 Dec 25  2021 kernel
+-rw-r--r--  1 root root     110 Dec 24  2021 kernel-img.conf
+-rw-r--r--  1 root root    1308 Dec  2  2017 kerneloops.conf
+drwxr-xr-x  2 root root    4096 Aug 19  2021 ldap
+-rw-r--r--  1 root root   67506 Jan 17  2022 ld.so.cache
+-rw-r--r--  1 root root      34 Apr 15  2020 ld.so.conf
+drwxr-xr-x  2 root root    4096 Dec 25  2021 ld.so.conf.d
+-rw-r--r--  1 root root     267 Dec  5  2019 legal
+-rw-r--r--  1 root root      27 Jan 19  2018 libao.conf
+-rw-r--r--  1 root root     191 Feb 18  2020 libaudit.conf
+drwxr-xr-x  3 root root    4096 Aug 19  2021 libblockdev
+drwxr-xr-x  2 root root    4096 Aug 19  2021 libnl-3
+drwxr-xr-x  2 root root    4096 Jun 26  2019 libpaper.d
+drwxr-xr-x  2 root root    4096 Dec 24  2021 libreoffice
+-rw-r--r--  1 root root    2996 Apr 15  2020 locale.alias
+-rw-r--r--  1 root root    9438 Dec 24  2021 locale.gen
+lrwxrwxrwx  1 root root      32 Dec 24  2021 localtime -> /usr/share/zoneinfo/Asia/Kolkata
+drwxr-xr-x  4 root root    4096 Aug 19  2021 logcheck
+-rw-r--r--  1 root root   10550 Feb  7  2020 login.defs
+-rw-r--r--  1 root root     533 Jan 21  2019 logrotate.conf
+drwxr-xr-x  2 root root    4096 Jan 17  2022 logrotate.d
+-rw-r--r--  1 root root     104 Aug  4  2021 lsb-release
+-rw-r--r--  1 root root   14867 Feb  1  2019 ltrace.conf
+-r--r--r--  1 root root      33 Dec 24  2021 machine-id
+-rw-r--r--  1 root root     111 Jan 17  2020 magic
+-rw-r--r--  1 root root     111 Jan 17  2020 magic.mime
+-rw-r--r--  1 root root   41950 Jan 17  2022 mailcap
+-rw-r--r--  1 root root     449 Oct 19  2019 mailcap.order
+-rw-r--r--  1 root root    5215 Feb 25  2020 manpath.config
+-rw-r--r--  1 root root   24546 Oct 19  2019 mime.types
+-rw-r--r--  1 root root     808 Feb 14  2020 mke2fs.conf
+drwxr-xr-x  2 root root    4096 Dec 25  2021 modprobe.d
+-rw-r--r--  1 root root     195 Aug 19  2021 modules
+drwxr-xr-x  2 root root    4096 Jan 17  2022 modules-load.d
+lrwxrwxrwx  1 root root      19 Dec 24  2021 mtab -> ../proc/self/mounts
+-rw-r--r--  1 root root     624 Mar 22  2020 mtools.conf
+drwxr-xr-x  3 root root    4096 Aug 19  2021 mysql
+-rw-r--r--  1 root root   10037 Feb  7  2020 nanorc
+drwxr-xr-x  2 root root    4096 Aug 19  2021 netplan
+drwxr-xr-x  6 root root    4096 Aug 19  2021 network
+drwxr-xr-x  8 root root    4096 Aug 19  2021 networkd-dispatcher
+drwxr-xr-x  7 root root    4096 Aug 19  2021 NetworkManager
+-rw-r--r--  1 root root      91 Dec  5  2019 networks
+drwxr-xr-x  2 root root    4096 Aug 19  2021 newt
+-rw-r--r--  1 root root     542 Dec 24  2021 nsswitch.conf
+drwxr-xr-x  4 root root    4096 Aug 19  2021 openvpn
+drwxr-xr-x  2 root root    4096 Aug 19  2021 opt
+lrwxrwxrwx  1 root root      21 Dec 24  2021 os-release -> ../usr/lib/os-release
+drwxr-xr-x  2 root root    4096 Aug 19  2021 PackageKit
+-rw-r--r--  1 root root     552 Dec 17  2019 pam.conf
+drwxr-xr-x  2 root root    4096 Jan 17  2022 pam.d
+-rw-rw-r--  1 root root       3 Dec 24  2021 papersize
+-rw-r--r--  1 root root    2890 Jan 17  2022 passwd
+-rw-r--r--  1 root root    2855 Dec 25  2021 passwd-
+drwxr-xr-x  2 root root    4096 Aug 19  2021 pcmcia
+drwxr-xr-x  3 root root    4096 Aug 19  2021 perl
+drwxr-xr-x  4 root root    4096 Aug 19  2021 pki
+drwxr-xr-x  3 root root    4096 Aug 19  2021 pm
+-rw-r--r--  1 root root    7649 Aug 19  2021 pnm2ppa.conf
+drwxr-xr-x  4 root root    4096 Aug 19  2021 polkit-1
+-rw-rw-r--  1 root root     350 Dec 24  2021 popularity-contest.conf
+drwxr-xr-x  7 root dip     4096 Aug 19  2021 ppp
+-rw-r--r--  1 root root     581 Dec  5  2019 profile
+drwxr-xr-x  2 root root    4096 Dec 24  2021 profile.d
+-rw-r--r--  1 root root    2932 Apr  2  2013 protocols
+drwxr-xr-x  3 root root    4096 Dec 24  2021 pulse
+drwxr-xr-x  2 root root    4096 Aug 19  2021 python3
+drwxr-xr-x  2 root root    4096 Dec 24  2021 python3.8
+drwxr-xr-x  2 root root    4096 Dec 24  2021 rc0.d
+drwxr-xr-x  2 root root    4096 Dec 24  2021 rc1.d
+drwxr-xr-x  2 root root    4096 Dec 24  2021 rc2.d
+drwxr-xr-x  2 root root    4096 Dec 24  2021 rc3.d
+drwxr-xr-x  2 root root    4096 Dec 24  2021 rc4.d
+drwxr-xr-x  2 root root    4096 Dec 24  2021 rc5.d
+drwxr-xr-x  2 root root    4096 Dec 24  2021 rc6.d
+drwxr-xr-x  2 root root    4096 Dec 24  2021 rcS.d
+lrwxrwxrwx  1 root root      39 Dec 24  2021 resolv.conf -> ../run/systemd/resolve/stub-resolv.conf
+lrwxrwxrwx  1 root root      13 Dec 24  2021 rmt -> /usr/sbin/rmt
+-rw-r--r--  1 root root     887 Apr  1  2013 rpc
+-rw-r--r--  1 root root    1382 Feb 11  2020 rsyslog.conf
+drwxr-xr-x  2 root root    4096 Dec 24  2021 rsyslog.d
+-rw-r--r--  1 root root    5211 Mar 11  2020 rygel.conf
+drwxr-xr-x  3 root root    4096 Aug 19  2021 sane.d
+drwxr-xr-x  4 root root    4096 Dec 24  2021 security
+drwxr-xr-x  2 root root    4096 Aug 19  2021 selinux
+-rw-r--r--  1 root root   10593 Nov  7  2019 sensors3.conf
+drwxr-xr-x  2 root root    4096 Aug 19  2021 sensors.d
+-rw-r--r--  1 root root   14464 Feb 17  2020 services
+drwxr-xr-x  3 root root    4096 Aug 19  2021 sgml
+-rw-r-----  1 root shadow  1616 May  5 16:09 shadow
+-rw-r-----  1 root shadow  1615 May  5 16:07 shadow-
+-rw-r--r--  1 root root     116 Aug 19  2021 shells
+drwxr-xr-x  2 root root    4096 Aug 19  2021 skel
+drwxr-xr-x  2 root root    4096 Aug 19  2021 snmp
+drwxr-xr-x  4 root root    4096 Aug 19  2021 speech-dispatcher
+drwxr-xr-x  3 root root    4096 Jan 17  2022 ssh
+drwxr-xr-x  4 root root    4096 Dec 24  2021 ssl
+-rw-r--r--  1 root root      38 Jan 17  2022 subgid
+-rw-r--r--  1 root root      21 Dec 24  2021 subgid-
+-rw-r--r--  1 root root      38 Jan 17  2022 subuid
+-rw-r--r--  1 root root      21 Dec 24  2021 subuid-
+-r--r-----  1 root root     755 Feb  3  2020 sudoers
+drwxr-xr-x  2 root root    4096 Dec 24  2021 sudoers.d
+-rw-r--r--  1 root root    2351 Feb 14  2020 sysctl.conf
+drwxr-xr-x  2 root root    4096 Jan 17  2022 sysctl.d
+drwxr-xr-x  5 root root    4096 Jan 17  2022 systemd
+drwxr-xr-x  2 root root    4096 Aug 19  2021 terminfo
+drwxr-xr-x  2 root root    4096 Dec 24  2021 thermald
+drwxr-xr-x  2 root root    4096 Dec 24  2021 thunderbird
+-rw-r--r--  1 root root      13 Dec 24  2021 timezone
+drwxr-xr-x  2 root root    4096 Apr 22  2020 tmpfiles.d
+drwxr-xr-x  2 root root    4096 Jan 17  2022 ubuntu-advantage
+-rw-r--r--  1 root root    1260 Dec 14  2018 ucf.conf
+drwxr-xr-x  4 root root    4096 Jan 17  2022 udev
+drwxr-xr-x  2 root root    4096 Dec 24  2021 udisks2
+drwxr-xr-x  3 root root    4096 Dec 24  2021 ufw
+drwxr-xr-x  3 root root    4096 Aug 19  2021 update-manager
+drwxr-xr-x  2 root root    4096 Jan 17  2022 update-motd.d
+drwxr-xr-x  2 root root    4096 Aug  5  2021 update-notifier
+drwxr-xr-x  2 root root    4096 Aug 19  2021 UPower
+-rw-r--r--  1 root root    1523 Feb 10  2020 usb_modeswitch.conf
+drwxr-xr-x  2 root root    4096 Feb 25  2020 usb_modeswitch.d
+drwxr-xr-x  2 root root    4096 Dec 24  2021 vim
+drwxr-xr-x  4 root root    4096 Dec 24  2021 vmware-tools
+lrwxrwxrwx  1 root root      23 Dec 24  2021 vtrgb -> /etc/alternatives/vtrgb
+drwxr-xr-x  5 root root    4096 Aug 19  2021 vulkan
+-rw-r--r--  1 root root    4942 Jul 25  2019 wgetrc
+drwxr-xr-x  2 root root    4096 Aug 19  2021 wpa_supplicant
+drwxr-xr-x 11 root root    4096 Aug 19  2021 X11
+-rw-r--r--  1 root root     642 Sep 24  2019 xattr.conf
+drwxr-xr-x  6 root root    4096 Aug 19  2021 xdg
+drwxr-xr-x  2 root root    4096 Aug 19  2021 xml
+-rw-r--r--  1 root root     477 Oct  7  2019 zsh_command_not_found
+babajan@babajan-VirtualBox:/etc$ cat xml
+cat: xml: Is a directory
+babajan@babajan-VirtualBox:/etc$ cat wgetrc
+###
+### Sample Wget initialization file .wgetrc
+###
+
+## You can use this file to change the default behaviour of wget or to
+## avoid having to type many many command-line options. This file does
+## not contain a comprehensive list of commands -- look at the manual
+## to find out what you can put into this file. You can find this here:
+##   $ info wget.info 'Startup File'
+## Or online here:
+##   https://www.gnu.org/software/wget/manual/wget.html#Startup-File
+##
+## Wget initialization file can reside in /etc/wgetrc
+## (global, for all users) or $HOME/.wgetrc (for a single user).
+##
+## To use the settings in this file, you will have to uncomment them,
+## as well as change them, in most cases, as the values on the
+## commented-out lines are the default values (e.g. "off").
+##
+## Command are case-, underscore- and minus-insensitive.
+## For example ftp_proxy, ftp-proxy and ftpproxy are the same.
+
+
+##
+## Global settings (useful for setting up in /etc/wgetrc).
+## Think well before you change them, since they may reduce wget's
+## functionality, and make it behave contrary to the documentation:
+##
+
+# You can set retrieve quota for beginners by specifying a value
+# optionally followed by 'K' (kilobytes) or 'M' (megabytes).  The
+# default quota is unlimited.
+#quota = inf
+
+# You can lower (or raise) the default number of retries when
+# downloading a file (default is 20).
+#tries = 20
+
+# Lowering the maximum depth of the recursive retrieval is handy to
+# prevent newbies from going too "deep" when they unwittingly start
+# the recursive retrieval.  The default is 5.
+#reclevel = 5
+
+# By default Wget uses "passive FTP" transfer where the client
+# initiates the data connection to the server rather than the other
+# way around.  That is required on systems behind NAT where the client
+# computer cannot be easily reached from the Internet.  However, some
+# firewalls software explicitly supports active FTP and in fact has
+# problems supporting passive transfer.  If you are in such
+# environment, use "passive_ftp = off" to revert to active FTP.
+#passive_ftp = off
+passive_ftp = on
+
+# The "wait" command below makes Wget wait between every connection.
+# If, instead, you want Wget to wait only between retries of failed
+# downloads, set waitretry to maximum number of seconds to wait (Wget
+# will use "linear backoff", waiting 1 second after the first failure
+# on a file, 2 seconds after the second failure, etc. up to this max).
+#waitretry = 10
+
+
+##
+## Local settings (for a user to set in his $HOME/.wgetrc).  It is
+## *highly* undesirable to put these settings in the global file, since
+## they are potentially dangerous to "normal" users.
+##
+## Even when setting up your own ~/.wgetrc, you should know what you
+## are doing before doing so.
+##
+
+# Set this to on to use timestamping by default:
+#timestamping = off
+
+# It is a good idea to make Wget send your email address in a `From:'
+# header with your request (so that server administrators can contact
+# you in case of errors).  Wget does *not* send `From:' by default.
+#header = From: Your Name <username@site.domain>
+
+# You can set up other headers, like Accept-Language.  Accept-Language
+# is *not* sent by default.
+#header = Accept-Language: en
+
+# You can set the default proxies for Wget to use for http, https, and ftp.
+# They will override the value in the environment.
+#https_proxy = http://proxy.yoyodyne.com:18023/
+#http_proxy = http://proxy.yoyodyne.com:18023/
+#ftp_proxy = http://proxy.yoyodyne.com:18023/
+
+# If you do not want to use proxy at all, set this to off.
+#use_proxy = on
+
+# You can customize the retrieval outlook.  Valid options are default,
+# binary, mega and micro.
+#dot_style = default
+
+# Setting this to off makes Wget not download /robots.txt.  Be sure to
+# know *exactly* what /robots.txt is and how it is used before changing
+# the default!
+#robots = on
+
+# It can be useful to make Wget wait between connections.  Set this to
+# the number of seconds you want Wget to wait.
+#wait = 0
+
+# You can force creating directory structure, even if a single is being
+# retrieved, by setting this to on.
+#dirstruct = off
+
+# You can turn on recursive retrieving by default (don't do this if
+# you are not sure you know what it means) by setting this to on.
+#recursive = off
+
+# To always back up file X as X.orig before converting its links (due
+# to -k / --convert-links / convert_links = on having been specified),
+# set this variable to on:
+#backup_converted = off
+
+# To have Wget follow FTP links from HTML files by default, set this
+# to on:
+#follow_ftp = off
+
+# To try ipv6 addresses first:
+#prefer-family = IPv6
+
+# Set default IRI support state
+#iri = off
+
+# Force the default system encoding
+#localencoding = UTF-8
+
+# Force the default remote server encoding
+#remoteencoding = UTF-8
+
+# Turn on to prevent following non-HTTPS links when in recursive mode
+#httpsonly = off
+
+# Tune HTTPS security (auto, SSLv2, SSLv3, TLSv1, PFS)
+#secureprotocol = auto
+babajan@babajan-VirtualBox:/etc$ cd /
+babajan@babajan-VirtualBox:/$ ls
+bin  boot  cdrom  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  swapfile  sys  tmp  usr  var
+babajan@babajan-VirtualBox:/$ cat os-release
+cat: os-release: No such file or directory
+babajan@babajan-VirtualBox:/$ mkdir mynewFolder
+mkdir: cannot create directory ‘mynewFolder’: Permission denied
+babajan@babajan-VirtualBox:/$ cd home
+babajan@babajan-VirtualBox:/home$ mkdir mynewFolder
+mkdir: cannot create directory ‘mynewFolder’: Permission denied
+babajan@babajan-VirtualBox:/home$ ls -la
+total 12
+drwxr-xr-x  3 root    root    4096 Dec 24  2021 .
+drwxr-xr-x 20 root    root    4096 Dec 24  2021 ..
+drwxr-xr-x 18 babajan babajan 4096 May  5 15:44 babajan
+babajan@babajan-VirtualBox:/home$ cd babajan
+babajan@babajan-VirtualBox:~$ mkdir -m a=rwx
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+babajan@babajan-VirtualBox:~$ mkdir -help
+mkdir: invalid option -- 'h'
+Try 'mkdir --help' for more information.
+babajan@babajan-VirtualBox:~$ mkdir --help
+Usage: mkdir [OPTION]... DIRECTORY...
+Create the DIRECTORY(ies), if they do not already exist.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -m, --mode=MODE   set file mode (as in chmod), not a=rwx - umask
+  -p, --parents     no error if existing, make parent directories as needed
+  -v, --verbose     print a message for each created directory
+  -Z                   set SELinux security context of each created directory
+                         to the default type
+      --context[=CTX]  like -Z, or if CTX is specified then set the SELinux
+                         or SMACK security context to CTX
+      --help     display this help and exit
+      --version  output version information and exit
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Full documentation at: <https://www.gnu.org/software/coreutils/mkdir>
+or available locally via: info '(coreutils) mkdir invocation'
+babajan@babajan-VirtualBox:~$ mkdir -m a=rwx [babajan]
+babajan@babajan-VirtualBox:~$ cd babajan
+bash: cd: babajan: No such file or directory
+babajan@babajan-VirtualBox:~$ ls
+ 12a.txt      cie2.sh     employdata.txt   exp11a.sh    exp3.c         exp6.c     expi4reader.c   f3     file#     grep           Music      Templates    Videos
+'[babajan]'   Desktop     ermi             exp11b.sh    exp4reader.c   exp7.c     expi4writer.c   f4     file@    'in 2 post.c'   Pictures   test
+ bj_j         Documents   exp10a.sh        exp12a.awk   exp4writer.c   exp9a.sh   f1              fhl    file_sl   in2post.c      Public     test.txt
+ Bj.rb        Downloads   exp10b.sh        exp12b.awk   exp5.c         exp9b.sh   f2              file   fsl       MBJ            snap       typescript
+babajan@babajan-VirtualBox:~$ cd MBJ
+babajan@babajan-VirtualBox:~/MBJ$ mkdir [mbjay]
+babajan@babajan-VirtualBox:~/MBJ$ ls
+ exp10a.sh   exp10b.sh   fil   fildf  'file$'   filkk   filyi  '[mbjay]'
+babajan@babajan-VirtualBox:~/MBJ$ cd mbjay
+bash: cd: mbjay: No such file or directory
+babajan@babajan-VirtualBox:~/MBJ$ cd [mbjay]
+babajan@babajan-VirtualBox:~/MBJ/[mbjay]$ ls
+babajan@babajan-VirtualBox:~/MBJ/[mbjay]$ ls -l
+total 0
+babajan@babajan-VirtualBox:~/MBJ/[mbjay]$ cd..
+cd..: command not found
+babajan@babajan-VirtualBox:~/MBJ/[mbjay]$ cd ..
+babajan@babajan-VirtualBox:~/MBJ$ cd ../..
+babajan@babajan-VirtualBox:/home$ cd -
+/home/babajan/MBJ
+babajan@babajan-VirtualBox:~/MBJ$ pwd
+/home/babajan/MBJ
+babajan@babajan-VirtualBox:~/MBJ$ mkdir folder2
+babajan@babajan-VirtualBox:~/MBJ$ cd folder2/
+babajan@babajan-VirtualBox:~/MBJ/folder2$ mkdir -p folder1/folder2/folder3
+babajan@babajan-VirtualBox:~/MBJ/folder2$ ls
+folder1
+babajan@babajan-VirtualBox:~/MBJ/folder2$ mkdir -p folder11/folder12/folder13
+babajan@babajan-VirtualBox:~/MBJ/folder2$ ls
+folder1  folder11
+babajan@babajan-VirtualBox:~/MBJ/folder2$ cd folder2
+bash: cd: folder2: No such file or directory
+babajan@babajan-VirtualBox:~/MBJ/folder2$ cd folder3/
+bash: cd: folder3/: No such file or directory
+babajan@babajan-VirtualBox:~/MBJ/folder2$ cd folder1/
+babajan@babajan-VirtualBox:~/MBJ/folder2/folder1$ cd folder2/
+babajan@babajan-VirtualBox:~/MBJ/folder2/folder1/folder2$ cd folder3/
+babajan@babajan-VirtualBox:~/MBJ/folder2/folder1/folder2/folder3$ cd -
+/home/babajan/MBJ/folder2/folder1/folder2
+babajan@babajan-VirtualBox:~/MBJ/folder2/folder1/folder2$ pwd
+/home/babajan/MBJ/folder2/folder1/folder2
+babajan@babajan-VirtualBox:~/MBJ/folder2/folder1/folder2$ cd ../../..
+babajan@babajan-VirtualBox:~/MBJ$ ls
+ exp10a.sh   exp10b.sh   fil   fildf  'file$'   filkk   filyi   folder2  '[mbjay]'
+babajan@babajan-VirtualBox:~/MBJ$ rm exp10a.sh
+babajan@babajan-VirtualBox:~/MBJ$ ls
+ exp10b.sh   fil   fildf  'file$'   filkk   filyi   folder2  '[mbjay]'
+babajan@babajan-VirtualBox:~/MBJ$ rm -r folder2/
+babajan@babajan-VirtualBox:~/MBJ$ ls
+ exp10b.sh   fil   fildf  'file$'   filkk   filyi  '[mbjay]'
+babajan@babajan-VirtualBox:~/MBJ$ cp exp10b.sh backup
+babajan@babajan-VirtualBox:~/MBJ$ ls
+ backup   exp10b.sh   fil   fildf  'file$'   filkk   filyi  '[mbjay]'
+babajan@babajan-VirtualBox:~/MBJ$ cat backup
+if [ ` expr $# % 2 ` -ne 0 ]
+then
+echo odd number of filess are supplied as arguments.
+echo no copying will take place
+exit 
+else
+i=0
+for k in $*
+do
+i=` expr $i + 1 `
+if [ $i -eq 1 ]
+then
+temp1=$k
+fi
+if [ $i -eq 2 ]
+then
+temp2=$k
+i=0
+cp $temp1 $temp2
+fi
+done
+fi
+
+babajan@babajan-VirtualBox:~/MBJ$ cat exp10b.sh
+if [ ` expr $# % 2 ` -ne 0 ]
+then
+echo odd number of filess are supplied as arguments.
+echo no copying will take place
+exit 
+else
+i=0
+for k in $*
+do
+i=` expr $i + 1 `
+if [ $i -eq 1 ]
+then
+temp1=$k
+fi
+if [ $i -eq 2 ]
+then
+temp2=$k
+i=0
+cp $temp1 $temp2
+fi
+done
+fi
+
+babajan@babajan-VirtualBox:~/MBJ$ mkdir folder1
+babajan@babajan-VirtualBox:~/MBJ$ cd folder1/
+babajan@babajan-VirtualBox:~/MBJ/folder1$ touch xyz
+babajan@babajan-VirtualBox:~/MBJ/folder1$ ls
+xyz
+babajan@babajan-VirtualBox:~/MBJ/folder1$ cd ..
+babajan@babajan-VirtualBox:~/MBJ$ cp -r folder1 folder2
+babajan@babajan-VirtualBox:~/MBJ$ cd folder2/
+babajan@babajan-VirtualBox:~/MBJ/folder2$ ls
+xyz
+babajan@babajan-VirtualBox:~/MBJ/folder2$ cd ..
+babajan@babajan-VirtualBox:~/MBJ$ ls
+ backup   exp10b.sh   fil   fildf  'file$'   filkk   filyi   folder1   folder2  '[mbjay]'
+babajan@babajan-VirtualBox:~/MBJ$ mv backup backupp
+babajan@babajan-VirtualBox:~/MBJ$ ls
+ backupp   exp10b.sh   fil   fildf  'file$'   filkk   filyi   folder1   folder2  '[mbjay]'
+babajan@babajan-VirtualBox:~/MBJ$ mv backupp folder1/
+babajan@babajan-VirtualBox:~/MBJ$ ls
+ exp10b.sh   fil   fildf  'file$'   filkk   filyi   folder1   folder2  '[mbjay]'
+babajan@babajan-VirtualBox:~/MBJ$ cd folder1
+babajan@babajan-VirtualBox:~/MBJ/folder1$ ls
+backupp  xyz
+babajan@babajan-VirtualBox:~/MBJ/folder1$ mv backupp ..
+babajan@babajan-VirtualBox:~/MBJ/folder1$ ls
+xyz
+babajan@babajan-VirtualBox:~/MBJ/folder1$ cd ..
+babajan@babajan-VirtualBox:~/MBJ$ ls
+ backupp   exp10b.sh   fil   fildf  'file$'   filkk   filyi   folder1   folder2  '[mbjay]'
+babajan@babajan-VirtualBox:~/MBJ$ cd /bin
+babajan@babajan-VirtualBox:/bin$ ls
+'['                                   fc-validate                    ipcs                               pdftocairo                       tbl
+ aa-enabled                           fgconsole                      ipod-read-sysinfo-extended         pdftohtml                        tbl-dctrl
+ aa-exec                              fgrep                          ipod-time-sync                     pdftoppm                         tee
+ aconnect                             file                           ippfind                            pdftops                          telnet
+ acpi_listen                          file2brl                       ipptool                            pdftotext                        telnet.netkit
+ add-apt-repository                   file-roller                    iptables-xml                       pdfunite                         tempfile
+ addpart                              fincore                        ischroot                           peekfd                           test
+ addr2line                            find                           isdv4-serial-debugger              perl                             tgz
+ alsabat                              findmnt                        isdv4-serial-inputattach           perl5.30.0                       thunderbird
+ alsaloop                             firefox                        isodump                            perl5.30-x86_64-linux-gnu        tic
+ alsamixer                            flock                          isoinfo                            perlbug                          tificc
+ alsatplg                             fmt                            isovfy                             perldoc                          time
+ alsaucm                              fold                           ispell-wrapper                     perli11ndoc                      timedatectl
+ amidi                                fonttosfnt                     join                               perlivp                          timeout
+ amixer                               foo2ddst                       join-dctrl                         perlthanks                       tload
+ amuFormat.sh                         foo2ddst-wrapper               journalctl                         pf2afm                           toe
+ apg                                  foo2hbpl2                      jpgicc                             pfbtopfa                         top
+ apgbfm                               foo2hbpl2-wrapper              json_pp                            pftp                             totem
+ aplay                                foo2hiperc                     kbdinfo                            pgrep                            totem-video-thumbnailer
+ aplaymidi                            foo2hiperc-wrapper             kbd_mode                           pic                              touch
+ apport-bug                           foo2hp                         kbxutil                            pico                             tput
+ apport-cli                           foo2hp2600-wrapper             kernel-install                     piconv                           tr
+ apport-collect                       foo2lava                       kerneloops-submit                  pidof                            tracepath
+ apport-unpack                        foo2lava-wrapper               keyring                            pinentry                         traceroute6
+ appres                               foo2oak                        kill                               pinentry-curses                  traceroute6.iputils
+ appstreamcli                         foo2oak-wrapper                killall                            pinentry-gnome3                  tracker
+ apropos                              foo2qpdl                       kmod                               pinentry-x11                     transicc
+ apt                                  foo2qpdl-wrapper               kmodsign                           ping                             transmission-gtk
+ apt-add-repository                   foo2slx                        l2ping                             ping4                            transset
+ apt-cache                            foo2slx-wrapper                l2test                             ping6                            troff
+ apt-cdrom                            foo2xqx                        laptop-detect                      pinky                            true
+ apt-config                           foo2xqx-wrapper                last                               pkaction                         truncate
+ aptdcon                              foo2zjs                        lastb                              pkcheck                          trust
+ apt-extracttemplates                 foo2zjs-icc2ps                 lastlog                            pkcon                            tset
+ apt-ftparchive                       foo2zjs-pstops                 lavadecode                         pkexec                           tsort
+ apt-get                              foo2zjs-wrapper                lcf                                pkg-config                       ttfread
+ apt-key                              foomatic-rip                   ld                                 pkill                            tty
+ apt-mark                             fprintd-delete                 ld.bfd                             pkmon                            tzselect
+ apt-sortpkgs                         fprintd-enroll                 ldd                                pkttyagent                       ua
+ apturl                               fprintd-list                   ld.gold                            pl2pm                            ubuntu-advantage
+ apturl-gtk                           fprintd-verify                 less                               pldd                             ubuntu-bug
+ ar                                   free                           lessecho                           plog                             ubuntu-core-launcher
+ arch                                 from                           lessfile                           plymouth                         ubuntu-distro-info
+ arecord                              ftp                            lesskey                            pmap                             ubuntu-drivers
+ arecordmidi                          funzip                         lesspipe                           pnm2ppa                          ubuntu-report
+ arm2hpdl                             fuser                          lexgrog                            pod2html                         ubuntu-security-status
+ as                                   fusermount                     libnetcfg                          pod2man                          ucf
+ aseqdump                             futurize                       libreoffice                        pod2text                         ucfq
+ aseqnet                              fwupdagent                     libwacom-list-local-devices        pod2usage                        ucfr
+ aspell                               fwupdate                       link                               podchecker                       ucs2any
+ aspell-import                        fwupdmgr                       linkicc                            podselect                        udevadm
+ atobm                                fwupdtool                      linux32                            poff                             udisksctl
+ avahi-browse                         fwupdtpmevlog                  linux64                            pon                              ul
+ avahi-browse-domains                 g++                            linux-boot-prober                  POST                             ulockmgr_server
+ avahi-publish                        g++-9                          linux-check-removal                ppdc                             umax_pp
+ avahi-publish-address                gamemoded                      linux-update-symlinks              ppdhtml                          umount
+ avahi-publish-service                gamemoderun                    linux-version                      ppdi                             uname
+ avahi-resolve                        gamma4scanimage                listres                            ppdmerge                         unattended-upgrade
+ avahi-resolve-address                gapplication                   ln                                 ppdpo                            unattended-upgrades
+ avahi-resolve-host-name              gatttool                       lnstat                             pphs                             uncompress
+ avahi-set-host-name                  gcalccmd                       loadkeys                           pr                               unexpand
+ awk                                  gcc                            loadunimap                         precat                           unicode_start
+ axfer                                gcc-9                          localc                             preconv                          unicode_stop
+ b2sum                                gcc-ar                         locale                             preunzip                         uniq
+ baobab                               gcc-ar-9                       locale-check                       prezip                           unity-scope-loader
+ base32                               gcc-nm                         localectl                          prezip-bin                       unlink
+ base64                               gcc-nm-9                       localedef                          print                            unlz4
+ basename                             gcc-ranlib                     lodraw                             printafm                         unlzma
+ bash                                 gcc-ranlib-9                   loffice                            printenv                         unmkinitramfs
+ bashbug                              gcore                          lofromtemplate                     printerbanner                    unopkg
+ bc                                   gcov                           logger                             printer-profile                  unshare
+ bccmd                                gcov-9                         login                              printf                           unsquashfs
+ bdftopcf                             gcov-dump                      loginctl                           prlimit                          unxz
+ bdftruncate                          gcov-dump-9                    logname                            prove                            unzip
+ bitmap                               gcov-tool                      loimpress                          prtstat                          unzipsfx
+ bluemoon                             gcov-tool-9                    lomath                             ps                               update-alternatives
+ bluetoothctl                         gcr-viewer                     look                               ps2ascii                         update-desktop-database
+ bluetooth-sendto                     gdb                            lorder                             ps2epsi                          update-manager
+ bmtoa                                gdb-add-index                  loweb                              ps2pdf                           update-mime-database
+ boltctl                              gdbserver                      lowntfs-3g                         ps2pdf12                         update-notifier
+ bootctl                              gdbtui                         lowriter                           ps2pdf13                         upower
+ brltty                               gdbus                          lp                                 ps2pdf14                         uptime
+ brltty-ctb                           gdialog                        lpoptions                          ps2pdfwr                         usb-creator-gtk
+ brltty-trtxt                         gdk-pixbuf-csource             lpq                                ps2ps                            usb-devices
+ brltty-ttb                           gdk-pixbuf-pixdata             lpr                                ps2ps2                           usbhid-dump
+ broadwayd                            gdk-pixbuf-thumbnailer         lprm                               ps2txt                           usb_printerid
+ browse                               gdmflexiserver                 lp_solve                           psfaddtable                      usbreset
+ bsd-from                             gdm-screenshot                 lpstat                             psfgettable                      users
+ bsd-write                            gedit                          ls                                 psfstriptable                    utmpdump
+ btattach                             gencat                         lsattr                             psfxtable                        uuidgen
+ btmgmt                               genisoimage                    lsblk                              psicc                            uuidparse
+ btmon                                geqn                           lsb_release                        pslog                            uz
+ bunzip2                              GET                            lscpu                              pstree                           VBoxClient
+ busctl                               getconf                        lshw                               pstree.x11                       VBoxClient-all
+ busybox                              geteltorito                    lsinitramfs                        ptar                             VBoxControl
+ bwrap                                getent                         lsipc                              ptardiff                         VBoxDRMClient
+ bzcat                                getfacl                        lslocks                            ptargrep                         vdir
+ bzcmp                                getkeycodes                    lslogins                           ptx                              VGAuthService
+ bzdiff                               getopt                         lsmem                              pulseaudio                       vi
+ bzegrep                              gettext                        lsmod                              pwd                              view
+ bzexe                                gettext.sh                     lsns                               pwdx                             viewres
+ bzfgrep                              ghostscript                    lsof                               py3clean                         vim.tiny
+ bzgrep                               ginstall-info                  lspci                              py3compile                       vmhgfs-fuse
+ bzip2                                gio                            lspgpot                            py3versions                      vmstat
+ bzip2recover                         gio-querymodules               lsusb                              pydoc3                           vm-support
+ bzless                               gipddecode                     ltrace                             pydoc3.8                         vmtoolsd
+ bzmore                               gjs                            luit                               pygettext3                       vmware-alias-import
+ c++                                  gjs-console                    lwp-download                       pygettext3.8                     vmware-checkvm
+ c89                                  gkbd-keyboard-display          lwp-dump                           pyjwt3                           vmwarectrl
+ c89-gcc                              glib-compile-schemas           lwp-mirror                         python3                          vmware-hgfsclient
+ c99                                  gnome-calculator               lwp-request                        python3.8                        vmware-namespace-cmd
+ c99-gcc                              gnome-calendar                 lz                                 python3-futurize                 vmware-rpctool
+ cal                                  gnome-characters               lz4                                python3-pasteurize               vmware-toolbox-cmd
+ calendar                             gnome-control-center           lz4c                               qpdldecode                       vmware-user
+ calibrate_ppa                        gnome-disk-image-mounter       lz4cat                             quirks-handler                   vmware-user-suid-wrapper
+ canberra-gtk-play                    gnome-disks                    lzcat                              ranlib                           vmware-vgauth-cmd
+ cancel                               gnome-extensions               lzcmp                              rbash                            vmware-vmblock-fuse
+ captoinfo                            gnome-font-viewer              lzdiff                             rcp                              vmware-xferlogs
+ cat                                  gnome-help                     lzegrep                            rctest                           vmwgfxctrl
+ catchsegv                            gnome-keyring                  lzfgrep                            rdiffdir                         volname
+ catman                               gnome-keyring-3                lzgrep                             rdma                             vstp
+ cautious-launcher                    gnome-keyring-daemon           lzless                             readelf                          w
+ cc                                   gnome-language-selector        lzma                               readlink                         wall
+ cd-create-profile                    gnome-logs                     lzmainfo                           realpath                         watch
+ cd-fix-profile                       gnome-power-statistics         lzmore                             red                              watchgnupg
+ cd-iccdump                           gnome-screenshot               m2300w                             remmina                          wc
+ cd-it8                               gnome-session                  m2300w-wrapper                     remmina-file-wrapper             wdctl
+ c++filt                              gnome-session-custom-session   m2400w                             remmina-gnome                    wget
+ chacl                                gnome-session-inhibit          make                               rename.ul                        whatis
+ chage                                gnome-session-properties       make-first-existing-target         rendercheck                      whereis
+ chardet3                             gnome-session-quit             mako-render                        renice                           which
+ chardetect3                          gnome-session-remmina          man                                reset                            whiptail
+ chattr                               gnome-shell                    mandb                              resizecons                       who
+ chcon                                gnome-shell-extension-tool     manpath                            resizepart                       whoami
+ check-language-support               gnome-shell-perf-tool          man-recode                         resolvectl                       whoopsie
+ cheese                               gnome-system-monitor           mapscrn                            rev                              whoopsie-preferences
+ chfn                                 gnome-terminal                 mattrib                            rfcomm                           word-list-compress
+ chgrp                                gnome-terminal.real            mawk                               rgrep                            wpa_passphrase
+ chmod                                gnome-terminal.wrapper         mbadblocks                         rhythmbox                        w.procps
+ choom                                gnome-text-editor              mcat                               rhythmbox-client                 write
+ chown                                gnome-thumbnail-font           mcd                                rlogin                           X
+ chrt                                 gnome-todo                     mcheck                             rm                               X11
+ chsh                                 gnome-www-browser              mclasserase                        rmdir                            x11perf
+ chvt                                 gold                           mcomp                              rnano                            x11perfcomp
+ ciptool                              gpasswd                        mcookie                            routef                           x86_64
+ ckbcomp                              gpg                            mcopy                              routel                           x86_64-linux-gnu-addr2line
+ cksum                                gpg-agent                      md5sum                             rpcgen                           x86_64-linux-gnu-ar
+ clear                                gpgcompose                     md5sum.textutils                   rrsync                           x86_64-linux-gnu-as
+ clear_console                        gpgconf                        mdel                               rsh                              x86_64-linux-gnu-c++filt
+ cmp                                  gpg-connect-agent              mdeltree                           rstart                           x86_64-linux-gnu-cpp
+ codepage                             gpgparsemail                   mdig                               rstartd                          x86_64-linux-gnu-cpp-9
+ col                                  gpgsm                          mdir                               rsync                            x86_64-linux-gnu-dwp
+ colcrt                               gpgsplit                       mdu                                rtstat                           x86_64-linux-gnu-elfedit
+ colormgr                             gpgtar                         mesa-overlay-control.py            runcon                           x86_64-linux-gnu-g++
+ colrm                                gpgv                           mesg                               run-mailcap                      x86_64-linux-gnu-g++-9
+ column                               gpg-wks-server                 mformat                            run-parts                        x86_64-linux-gnu-gcc
+ comm                                 gpg-zip                        migrate-pubring-from-classic-gpg   run-with-aspell                  x86_64-linux-gnu-gcc-9
+ compose                              gpic                           mimeopen                           rview                            x86_64-linux-gnu-gcc-ar
+ corelist                             gprof                          mimetype                           rygel                            x86_64-linux-gnu-gcc-ar-9
+ cp                                   gpu-manager                    min12xxw                           sane-find-scanner                x86_64-linux-gnu-gcc-nm
+ cpan                                 grep                           minfo                              savelog                          x86_64-linux-gnu-gcc-nm-9
+ cpan5.30-x86_64-linux-gnu            grep-aptavail                  mkdir                              sbattach                         x86_64-linux-gnu-gcc-ranlib
+ cpio                                 grep-available                 mkfifo                             sbkeysync                        x86_64-linux-gnu-gcc-ranlib-9
+ cpp                                  grep-dctrl                     mkfontdir                          sbsiglist                        x86_64-linux-gnu-gcov
+ cpp-9                                grep-debtags                   mkfontscale                        sbsign                           x86_64-linux-gnu-gcov-9
+ c_rehash                             grep-status                    mkisofs                            sbvarsign                        x86_64-linux-gnu-gcov-dump
+ crontab                              gresource                      mkmanifest                         sbverify                         x86_64-linux-gnu-gcov-dump-9
+ csplit                               groff                          mk_modmap                          scanimage                        x86_64-linux-gnu-gcov-tool
+ ctstat                               grog                           mknod                              scp                              x86_64-linux-gnu-gcov-tool-9
+ cupstestppd                          grops                          mksquashfs                         scp-dbus-service                 x86_64-linux-gnu-gold
+ cut                                  grotty                         mktemp                             screendump                       x86_64-linux-gnu-gprof
+ cvt                                  groups                         mkzftree                           script                           x86_64-linux-gnu-ld
+ cvtsudoers                           grub-editenv                   mlabel                             scriptreplay                     x86_64-linux-gnu-ld.bfd
+ dash                                 grub-file                      mmcli                              sdiff                            x86_64-linux-gnu-ld.gold
+ date                                 grub-fstest                    mmd                                sdptool                          x86_64-linux-gnu-nm
+ dbus-cleanup-sockets                 grub-glue-efi                  mmount                             seahorse                         x86_64-linux-gnu-objcopy
+ dbus-daemon                          grub-kbdcomp                   mmove                              sed                              x86_64-linux-gnu-objdump
+ dbus-launch                          grub-menulst2cfg               monitor-sensor                     see                              x86_64-linux-gnu-pkg-config
+ dbus-monitor                         grub-mkfont                    more                               select-default-iwrap             x86_64-linux-gnu-ranlib
+ dbus-run-session                     grub-mkimage                   mount                              select-editor                    x86_64-linux-gnu-readelf
+ dbus-send                            grub-mklayout                  mountpoint                         sensible-browser                 x86_64-linux-gnu-size
+ dbus-update-activation-environment   grub-mknetdir                  mousetweaks                        sensible-editor                  x86_64-linux-gnu-strings
+ dbus-uuidgen                         grub-mkpasswd-pbkdf2           mpartition                         sensible-pager                   x86_64-linux-gnu-strip
+ dbxtool                              grub-mkrelpath                 mrd                                seq                              x86_64-pc-linux-gnu-pkg-config
+ dc                                   grub-mkrescue                  mren                               session-migration                xargs
+ dconf                                grub-mkstandalone              mscompress                         sessreg                          xauth
+ dd                                   grub-mount                     msexpand                           setarch                          xbiff
+ ddstdecode                           grub-ntldr-img                 mshortname                         setfacl                          xbrlapi
+ deallocvt                            grub-render-label              mshowfat                           setfont                          xcalc
+ debconf                              grub-script-check              mt                                 setkeycodes                      xclipboard
+ debconf-apt-progress                 grub-syslinux2cfg              mt-gnu                             setleds                          xclock
+ debconf-communicate                  gs                             mtools                             setlogcons                       xcmsdb
+ debconf-copydb                       gsbj                           mtoolstest                         setmetamode                      xconsole
+ debconf-escape                       gsdj                           mtr                                setpci                           xcursorgen
+ debconf-set-selections               gsdj500                        mtrace                             setpriv                          xcutsel
+ debconf-show                         gsettings                      mtr-packet                         setsid                           xdg-dbus-proxy
+ debian-distro-info                   gslj                           mtype                              setterm                          xdg-desktop-icon
+ deb-systemd-helper                   gslp                           mutter                             setupcon                         xdg-desktop-menu
+ deb-systemd-invoke                   gsnd                           mv                                 setxkbmap                        xdg-email
+ deja-dup                             gst-device-monitor-1.0         mxtar                              sftp                             xdg-icon-resource
+ delpart                              gst-discoverer-1.0             mzip                               sg                               xdg-mime
+ delv                                 gst-inspect-1.0                namei                              sh                               xdg-open
+ desktop-file-edit                    gst-launch-1.0                 nano                               sha1sum                          xdg-screensaver
+ desktop-file-install                 gst-play-1.0                   nautilus                           sha224sum                        xdg-settings
+ desktop-file-validate                gstreamer-codec-install        nautilus-autorun-software          sha256sum                        xdg-user-dir
+ devdump                              gst-typefind-1.0               nautilus-sendto                    sha384sum                        xdg-user-dirs-gtk-update
+ df                                   gtbl                           nawk                               sha512sum                        xdg-user-dirs-update
+ dfu-tool                             gtf                            nc                                 shasum                           xditview
+ dh_bash-completion                   gtk-builder-tool               ncal                               shotwell                         xdpyinfo
+ dh_dkms                              gtk-encode-symbolic-svg        nc.openbsd                         showconsolefont                  xdriinfo
+ dh_installxmlcatalogs                gtk-launch                     neqn                               showkey                          xedit
+ dh_perl_openssl                      gtk-query-settings             netcat                             showrgb                          Xephyr
+ diff                                 gtk-update-icon-cache          netkit-ftp                         shred                            xev
+ diff3                                gunzip                         networkctl                         shuf                             xeyes
+ dig                                  gvfs-cat                       networkd-dispatcher                simple-scan                      xfd
+ dir                                  gvfs-copy                      newgrp                             size                             xfontsel
+ dircolors                            gvfs-info                      ngettext                           skill                            xgamma
+ dirmngr                              gvfs-less                      nice                               slabtop                          xgc
+ dirmngr-client                       gvfs-ls                        nisdomainname                      sleep                            xhost
+ dirname                              gvfs-mime                      nl                                 slogin                           xinit
+ dirsplit                             gvfs-mkdir                     nm                                 slxdecode                        xinput
+ distro-info                          gvfs-monitor-dir               nm-applet                          smproxy                          xkbbell
+ dmesg                                gvfs-monitor-file              nmcli                              snap                             xkbcomp
+ dnsdomainname                        gvfs-mount                     nm-connection-editor               snapctl                          xkbevd
+ domainname                           gvfs-move                      nm-online                          snapfuse                         xkbprint
+ do-release-upgrade                   gvfs-open                      nmtui                              snice                            xkbvleds
+ dpkg                                 gvfs-rename                    nmtui-connect                      soelim                           xkbwatch
+ dpkg-architecture                    gvfs-rm                        nmtui-edit                         soffice                          xkeystone
+ dpkg-buildflags                      gvfs-save                      nmtui-hostname                     software-properties-gtk          xkill
+ dpkg-buildpackage                    gvfs-set-attribute             nohup                              sort                             xload
+ dpkg-checkbuilddeps                  gvfs-trash                     notify-send                        sort-dctrl                       xlogo
+ dpkg-deb                             gvfs-tree                      nproc                              sotruss                          xlsatoms
+ dpkg-distaddfile                     gzexe                          nroff                              spd-conf                         xlsclients
+ dpkg-divert                          gzip                           nsenter                            spd-say                          xlsfonts
+ dpkg-genbuildinfo                    h2ph                           nslookup                           speaker-test                     xmag
+ dpkg-genchanges                      h2xs                           nstat                              speech-dispatcher                xman
+ dpkg-gencontrol                      hbpldecode                     nsupdate                           spice-vdagent                    xmessage
+ dpkg-gensymbols                      hciattach                      ntfs-3g                            splain                           xmodmap
+ dpkg-maintscript-helper              hciconfig                      ntfs-3g.probe                      split                            xmore
+ dpkg-mergechangelogs                 hcitool                        ntfscat                            splitfont                        Xorg
+ dpkg-name                            hd                             ntfscluster                        sprof                            xprop
+ dpkg-parsechangelog                  head                           ntfscmp                            ss                               xqxdecode
+ dpkg-query                           HEAD                           ntfsdecrypt                        ssh                              xrandr
+ dpkg-scanpackages                    helpztags                      ntfsfallocate                      ssh-add                          xrdb
+ dpkg-scansources                     hex2hcd                        ntfsfix                            ssh-agent                        xrefresh
+ dpkg-shlibdeps                       hexdump                        ntfsinfo                           ssh-argv0                        x-session-manager
+ dpkg-source                          hipercdecode                   ntfsls                             ssh-copy-id                      xset
+ dpkg-split                           host                           ntfsmove                           ssh-keygen                       xsetmode
+ dpkg-statoverride                    hostid                         ntfsrecover                        ssh-keyscan                      xsetpointer
+ dpkg-trigger                         hostname                       ntfssecaudit                       start-pulseaudio-x11             xsetroot
+ dpkg-vendor                          hostnamectl                    ntfstruncate                       startx                           xsetwacom
+ driverless                           hp-align                       ntfsusermap                        stat                             xsm
+ du                                   hp-check                       ntfswipe                           static-sh                        xstdcmap
+ dumpkeys                             hp-clean                       numfmt                             stdbuf                           xsubpp
+ duplicity                            hp-colorcal                    nvidia-detector                    strace                           x-terminal-emulator
+ dvipdf                               hp-config_usb_printer          oakdecode                          strace-log-merge                 xvidtune
+ dwp                                  hp-doctor                      obexctl                            strings                          xvinfo
+ echo                                 hp-firmware                    objcopy                            strip                            Xwayland
+ ed                                   hp-info                        objdump                            stty                             xwd
+ edit                                 hp-levels                      oclock                             su                               x-window-manager
+ editor                               hp-logcapture                  od                                 sudo                             xwininfo
+ editres                              hp-makeuri                     oem-getlogs                        sudoedit                         xwud
+ egrep                                hp-pkservice                   on_ac_power                        sudoreplay                       x-www-browser
+ eject                                hp-plugin                      openssl                            sum                              xxd
+ elfedit                              hp-plugin-ubuntu               openvt                             symcryptrun                      xz
+ enc2xs                               hp-probe                       opldecode                          sync                             xzcat
+ encguess                             hp-query                       orca                               syslinux                         xzcmp
+ enchant-2                            hp-scan                        orca-dm-wrapper                    syslinux-legacy                  xzdiff
+ enchant-lsmod-2                      hp-setup                       os-prober                          system-config-printer            xzegrep
+ env                                  hp-testpage                    p11-kit                            system-config-printer-applet     xzfgrep
+ envsubst                             hp-timedate                    pacat                              systemctl                        xzgrep
+ eog                                  hwe-support-status             pacmd                              systemd                          xzless
+ eps2eps                              i386                           pactl                              systemd-analyze                  xzmore
+ eqn                                  i686-linux-gnu-pkg-config      padsp                              systemd-ask-password             yelp
+ esc-m                                ibus                           pager                              systemd-cat                      yes
+ eutp                                 ibus-daemon                    pa-info                            systemd-cgls                     ypdomainname
+ evince                               ibus-setup                     pamon                              systemd-cgtop                    zcat
+ evince-previewer                     ibus-table-createdb            paperconf                          systemd-delta                    zcmp
+ evince-thumbnailer                   iceauth                        paplay                             systemd-detect-virt              zdiff
+ ex                                   ico                            parec                              systemd-escape                   zdump
+ expand                               iconv                          parecord                           systemd-hwdb                     zegrep
+ expiry                               id                             partx                              systemd-id128                    zenity
+ expr                                 iecset                         passwd                             systemd-inhibit                  zfgrep
+ factor                               ijs_pxljr                      paste                              systemd-machine-id-setup         zforce
+ faillog                              im-config                      pasteurize                         systemd-mount                    zgrep
+ faked-sysv                           im-launch                      pasuspender                        systemd-notify                   zip
+ faked-tcp                            info                           patch                              systemd-path                     zipcloak
+ fakeroot                             infobrowser                    pathchk                            systemd-resolve                  zipdetails
+ fakeroot-sysv                        infocmp                        pax11publish                       systemd-run                      zipgrep
+ fakeroot-tcp                         infotocap                      pdb3                               systemd-socket-activate          zipinfo
+ fallocate                            inputattach                    pdb3.8                             systemd-stdio-bridge             zipnote
+ false                                install                        pdf2dsc                            systemd-sysusers                 zipsplit
+ fc-cache                             install-info                   pdf2ps                             systemd-tmpfiles                 zjsdecode
+ fc-cat                               install-printerdriver          pdfattach                          systemd-tty-ask-password-agent   zless
+ fc-conflist                          instmodsh                      pdfdetach                          systemd-umount                   zmore
+ fc-list                              intel-virtual-output           pdffonts                           tabs                             znew
+ fc-match                             ionice                         pdfimages                          tac
+ fc-pattern                           ip                             pdfinfo                            tail
+ fc-query                             ipcmk                          pdfseparate                        tar
+ fc-scan                              ipcrm                          pdfsig                             taskset
+babajan@babajan-VirtualBox:/bin$ /bin/echo "My name is khan"
+My name is khan
+babajan@babajan-VirtualBox:/bin$ which echo
+/usr/bin/echo
+babajan@babajan-VirtualBox:/bin$ cd MBJ
+bash: cd: MBJ: No such file or directory
+babajan@babajan-VirtualBox:/bin$ cd MBJ/
+bash: cd: MBJ/: No such file or directory
+babajan@babajan-VirtualBox:/bin$ cd ..
+babajan@babajan-VirtualBox:/$ cd MBJ
+bash: cd: MBJ: No such file or directory
+babajan@babajan-VirtualBox:/$ ls
+bin  boot  cdrom  dev  etc  home  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  snap  srv  swapfile  sys  tmp  usr  var
+babajan@babajan-VirtualBox:/$ cd home
+babajan@babajan-VirtualBox:/home$ ls
+babajan
+babajan@babajan-VirtualBox:/home$ ls
+babajan
+babajan@babajan-VirtualBox:/home$ cd /MBJ
+bash: cd: /MBJ: No such file or directory
+babajan@babajan-VirtualBox:/home$ cd babajan
+babajan@babajan-VirtualBox:~$ ls
+ 12a.txt      cie2.sh     employdata.txt   exp11a.sh    exp3.c         exp6.c     expi4reader.c   f3     file#     grep           Music      Templates    Videos
+'[babajan]'   Desktop     ermi             exp11b.sh    exp4reader.c   exp7.c     expi4writer.c   f4     file@    'in 2 post.c'   Pictures   test
+ bj_j         Documents   exp10a.sh        exp12a.awk   exp4writer.c   exp9a.sh   f1              fhl    file_sl   in2post.c      Public     test.txt
+ Bj.rb        Downloads   exp10b.sh        exp12b.awk   exp5.c         exp9b.sh   f2              file   fsl       MBJ            snap       typescript
+babajan@babajan-VirtualBox:~$ nano exp11a.sh
+babajan@babajan-VirtualBox:~$ nano exp11a.sh
+babajan@babajan-VirtualBox:~$ nano newfile
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ cat script
+echo "My Name is Khan "
+babajan@babajan-VirtualBox:~$ bash script
+My Name is Khan 
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+My Name is Khan 
+My name is Khan Sab
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+My Name is Khan 
+My name is Khan Sab
+My name is Variable Khan
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script Mr.Khan1
+My Name is Khan 
+My name is Khan Sab
+My name is Variable Khan
+script: line 6: Mr.Khan1: command not found
+babajan@babajan-VirtualBox:~$ bash script "Mr.Khan1"
+My Name is Khan 
+My name is Khan Sab
+My name is Variable Khan
+script: line 6: Mr.Khan1: command not found
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script "Mr.Khan1"
+My Name is Khan 
+My name is Khan Sab
+My name is Variable Khan
+Mr.Khan1
+babajan@babajan-VirtualBox:~$ bash script "Mr.Khan2"
+My Name is Khan 
+My name is Khan Sab
+My name is Variable Khan
+Mr.Khan2
+babajan@babajan-VirtualBox:~$ bash script "Mr.Khan1" "Mr.Khan2" "Mr.Khan3"
+My Name is Khan 
+My name is Khan Sab
+My name is Variable Khan
+Mr.Khan1 Mr.Khan2 Mr.Khan3
+babajan@babajan-VirtualBox:~$ bash script "Mr.Khan1" "Mr.Khan2" "Mr.Khan3" "Mr.Khan4" "Mr.Khan5"
+My Name is Khan 
+My name is Khan Sab
+My name is Variable Khan
+Mr.Khan1 Mr.Khan2 Mr.Khan3
+babajan@babajan-VirtualBox:~$ nano script
+
+
+Use "fg" to return to nano.
+
+[1]+  Stopped                 nano script
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+User Input Stuff\n 
+Enter Your Name : 
+BABAJAN_M
+BABAJAN_M
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+User Input Stuff\n 
+Enter Your Name : 
+BABAJAN M
+Your name is  BABAJAN M
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+Username:BABAJAN_M
+Password:Your Username is : BABAJAN_M 
+Your password --> Babajan@023 <-- is just awesome
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+Username:BABAJAN_M
+Password:script: line 6: syntax error near unexpected token `else'
+script: line 6: `else'
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+Username:BABAJAN_M
+Password:script: line 6: syntax error near unexpected token `else'
+script: line 6: `else'
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+Username:BABAJAN_M   
+Password:script: line 4: [BABAJAN_M: command not found
+Your password --> Mr.Khan <-- or username --> BABAJAN_M <-- might be wrong try again! 
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+Username:BABAJAN_M
+Password:script: line 4: [BABAJAN_M: command not found
+Your password --> Mr.Khan <-- or username --> BABAJAN_M <-- might be wrong try again! 
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+Username:BABAJAN_M
+Password:script: line 4: [BABAJAN_M: command not found
+Your password --> Khan <-- or username --> BABAJAN_M <-- might be wrong try again! 
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+Username:BABAJAN
+Password:script: line 4: [BABAJAN: command not found
+Your password --> Khan <-- or username --> BABAJAN <-- might be wrong try again! 
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+Username:babajan
+Password:script: line 4: [babajan: command not found
+Your password --> Khan <-- or username --> babajan <-- might be wrong try again! 
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+Username: babajan
+Password: script: line 4: [babajan: command not found
+Your password --> Khan <-- or username --> babajan <-- might be wrong try again! 
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+Username: babajan
+Password: script: line 4: [babajan: command not found
+Your password --> khan <-- or username --> babajan <-- might be wrong try again! 
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+Username: babajan
+Password: script: line 4: [babajan: command not found
+Your password --> khan <-- or username --> babajan <-- might be wrong try again! 
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script || echo "No error in code but still not working"
+Username: babajan
+Password: script: line 4: [babajan: command not found
+Your password --> khan <-- or username --> babajan <-- might be wrong try again! 
+No error in code but still not working
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+number: 88
+script: line 3: [: missing `]'
+No match found 
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+number: 77
+script: line 3: [: -gt: unary operator expected
+No match found 
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+number: 88
+script: line 3: [: -gt: unary operator expected
+No match found 
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+script: line 3: [: -gt: unary operator expected
+No match found 
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+number: 88
+Your number is between 10 and 100 
+script: line 5: elif[  -gt 100]: command not found
+Your number is greater than 100
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+number: 66
+script: line 7: syntax error near unexpected token `else'
+script: line 7: `else'
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+number: 77
+Your number is between 10 and 100 
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+My name is Khan1
+My name is Khan2
+My name is Khan3
+My name is Khan4
+My name is Khan5
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ bash script
+My name is Khan1
+My name is Khan11
+My name is Khan21
+My name is Khan31
+My name is Khan41
+My name is Khan51
+My name is Khan61
+My name is Khan71
+My name is Khan81
+My name is Khan91
+babajan@babajan-VirtualBox:~$ nano script
+babajan@babajan-VirtualBox:~$ top
+
+top - 02:14:39 up  6:03,  1 user,  load average: 0.09, 0.05, 0.01
+Tasks: 195 total,   1 running, 193 sleeping,   1 stopped,   0 zombie
+%Cpu(s):  4.2 us,  1.1 sy,  0.0 ni, 94.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   2179.5 total,    111.4 free,    779.4 used,   1288.7 buff/cache
+MiB Swap:   1421.2 total,   1421.2 free,      0.0 used.   1226.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                          
+   2143 babajan   20   0  823452  51492  38888 S   1.7   2.3   1:03.67 gnome-terminal-                                                                                  
+   1640 babajan   20   0 3758552 375396 130576 S   1.4  16.8   5:15.94 gnome-shell                                                                                      
+   5244 babajan   20   0   20492   3884   3232 R   1.4   0.2   0:02.26 top                                                                                              
+   1402 babajan   20   0  563372  84136  49940 S   1.0   3.8   1:47.19 Xorg                                                                                             
+   1562 babajan   20   0  163996   2772   2408 S   0.7   0.1   1:41.25 VBoxClient                                                                                       
+   2026 babajan   20   0  472836  43412  32820 S   0.3   1.9   0:02.14 update-notifier                                                                                  
+   3602 root      20   0       0      0      0 I   0.3   0.0   0:23.92 kworker/0:1-events                                                                               
+      1 root      20   0  167656  11660   8424 S   0.0   0.5   0:06.46 systemd                                                                                          
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kthreadd                                                                                         
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp                                                                                           
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp                                                                                       
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri                                                                      
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq                                                                                     
+     10 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_rude_                                                                                  
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_trace                                                                                  
+     12 root      20   0       0      0      0 S   0.0   0.0   0:01.07 ksoftirqd/0                                                                                      
+     13 root      20   0       0      0      0 I   0.0   0.0   0:03.47 rcu_sched                                                                                        
+     14 root      rt   0       0      0      0 S   0.0   0.0   0:00.35 migration/0                                                                                      
+     15 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/0                                                                                    
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0                                                                                          
+     17 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs                                                                                        
+     18 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns                                                                                            
+     19 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq                                                                                     
+     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd                                                                                          
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.03 khungtaskd                                                                                       
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper                                                                                       
+     23 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback                                                                                        
+     24 root      20   0       0      0      0 S   0.0   0.0   0:01.64 kcompactd0                                                                                       
+     25 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd                                                                                             
+     26 root      39  19       0      0      0 S   0.0   0.0   0:00.00 khugepaged                                                                                       
+     72 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd                                                                                      
+top - 02:16:10 up  6:04,  1 user,  load average: 0.02, 0.04, 0.00
+Tasks: 195 total,   1 running, 193 sleeping,   1 stopped,   0 zombie
+%Cpu(s): 13.0 us,  2.9 sy,  0.0 ni, 84.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   2179.5 total,    111.4 free,    779.4 used,   1288.7 buff/cache
+MiB Swap:   1421.2 total,   1421.2 free,      0.0 used.   1226.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                          
+   1402 babajan   20   0  563372  84136  49940 S   7.2   3.8   1:50.76 Xorg                                                                                             
+   1640 babajan   20   0 3758552 375368 130576 S   6.6  16.8   5:20.71 gnome-shell                                                                                      
+   2143 babajan   20   0  823452  51544  38888 S   5.9   2.3   1:06.87 gnome-terminal-                                                                                  
+   5244 babajan   20   0   20492   3884   3232 R   1.3   0.2   0:03.39 top                                                                                              
+    251 root     -51   0       0      0      0 S   0.3   0.0   0:02.08 irq/18-vmwgfx                                                                                    
+   1562 babajan   20   0  163996   2772   2408 S   0.3   0.1   1:41.67 VBoxClient                                                                                       
+   1818 babajan   20   0  356484  29812  19572 S   0.3   1.3   0:01.43 gsd-wacom                                                                                        
+   1826 babajan   20   0  722284  61144  45132 S   0.3   2.7   0:01.81 evolution-alarm                                                                                  
+      1 root      20   0  167656  11660   8424 S   0.0   0.5   0:06.46 systemd                                                                                          
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kthreadd                                                                                         
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp                                                                                           
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp                                                                                       
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri                                                                      
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq                                                                                     
+     10 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_rude_                                                                                  
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_trace                                                                                  
+     12 root      20   0       0      0      0 S   0.0   0.0   0:01.08 ksoftirqd/0                                                                                      
+     13 root      20   0       0      0      0 I   0.0   0.0   0:03.48 rcu_sched                                                                                        
+     14 root      rt   0       0      0      0 S   0.0   0.0   0:00.35 migration/0                                                                                      
+     15 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/0                                                                                    
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0                                                                                          
+     17 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs                                                                                        
+     18 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns                                                                                            
+     19 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq                                                                                     
+     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd                                                                                          
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.03 khungtaskd                                                                                       
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper                                                                                       
+     23 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback                                                                                        
+     24 root      20   0       0      0      0 S   0.0   0.0   0:01.64 kcompactd0                                                                                       
+     25 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd                                                                                             
+     26 root      39  19       0      0      0 S   0.0   0.0   0:00.00 khugepaged                                                                                       
+top - 02:18:54 up  6:07,  1 user,  load average: 0.04, 0.04, 0.00
+Tasks: 195 total,   1 running, 193 sleeping,   1 stopped,   0 zombie
+%Cpu(s):  2.3 us,  0.3 sy,  0.0 ni, 97.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   2179.5 total,    111.1 free,    779.6 used,   1288.8 buff/cache
+MiB Swap:   1421.2 total,   1421.2 free,      0.0 used.   1226.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                          
+   2143 babajan   20   0  823452  51544  38888 S   1.0   2.3   1:10.02 gnome-terminal-                                                                                  
+   1640 babajan   20   0 3758552 375404 130576 S   0.7  16.8   5:24.37 gnome-shell                                                                                      
+    567 message+  20   0    9900   6108   3864 S   0.3   0.3   0:10.58 dbus-daemon                                                                                      
+   1402 babajan   20   0  563372  84136  49940 S   0.3   3.8   1:53.64 Xorg                                                                                             
+   1562 babajan   20   0  163996   2772   2408 S   0.3   0.1   1:42.48 VBoxClient                                                                                       
+   3602 root      20   0       0      0      0 I   0.3   0.0   0:24.26 kworker/0:1-events                                                                               
+   5244 babajan   20   0   20492   3884   3232 R   0.3   0.2   0:04.86 top                                                                                              
+      1 root      20   0  167656  11660   8424 S   0.0   0.5   0:06.49 systemd                                                                                          
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.01 kthreadd                                                                                         
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp                                                                                           
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp                                                                                       
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri                                                                      
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq                                                                                     
+     10 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_rude_                                                                                  
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_trace                                                                                  
+     12 root      20   0       0      0      0 S   0.0   0.0   0:01.10 ksoftirqd/0                                                                                      
+     13 root      20   0       0      0      0 I   0.0   0.0   0:03.50 rcu_sched                                                                                        
+     14 root      rt   0       0      0      0 S   0.0   0.0   0:00.35 migration/0                                                                                      
+     15 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/0                                                                                    
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0                                                                                          
+     17 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs                                                                                        
+     18 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns                                                                                            
+     19 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq                                                                                     
+     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd                                                                                          
+     21 root      20   0       0      0      0 S   0.0   0.0   0:00.03 khungtaskd                                                                                       
+     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper                                                                                       
+     23 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback                                                                                        
+     24 root      20   0       0      0      0 S   0.0   0.0   0:01.65 kcompactd0                                                                                       
+     25 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd                                                                                             
+     26 root      39  19       0      0      0 S   0.0   0.0   0:00.00 khugepaged                                                                                       
+     72 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd                                                                                      
+babajan@babajan-VirtualBox:~$ 
+

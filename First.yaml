@@ -1,0 +1,20 @@
+myapp:
+    service: my-name-khan
+    test: script1
+    test2: script2
+    arr: [1,2,3,4,5,6]
+    arr1:
+      - k1.1: [1,2,3,4,5,6]
+        k1.2: value1
+      - k2.1: [4,5,6]
+        k2.2: value2
+      - k3.1: [3,4,5]
+        k3.2: value3
+
+#multiline Strings
+service: |
+      My name is khan.
+      I was just a kid when this movie was released.
+      This is a good movie
+      & lastly my name is khan.
+key2: Hi-Mr.Khan

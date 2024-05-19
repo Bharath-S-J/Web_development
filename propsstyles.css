@@ -1,0 +1,30 @@
+h2{
+    text-align: center;
+    background: rgb(49, 131, 173);
+    color: aliceblue;
+    height:50px;
+    width:400px;
+    border-radius: 30%;
+
+}
+h3{
+    text-align: center;
+    background: rgb(49, 131, 173);
+    color: aliceblue;
+    height:50px;
+    width:400px;
+    border-radius: 30%;
+}
+
+div{
+    text-align: center;
+    background: rgb(65, 221, 158);
+    color: rgb(0, 0, 0);
+    height:200px;
+    width:1000px;
+   
+}
+
+body{
+    background: palevioletred;
+}

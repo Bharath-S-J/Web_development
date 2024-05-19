@@ -1,0 +1,19 @@
+.blue{
+    text-align: center;
+    background: rgb(65, 174, 221);
+    color: rgb(0, 0, 0);
+    height:150px;
+    width:1000px;
+   
+}
+.red{
+    text-align: center;
+    background: rgb(244, 107, 107);
+    color: rgb(0, 0, 0);
+    height:150px;
+    width:1000px;
+   
+}
+p{
+    font-size:large;
+}
